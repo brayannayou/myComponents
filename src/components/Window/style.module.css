@@ -1,0 +1,15 @@
+.mainClass {
+    min-height: 200px;
+}
+.closeButtonClass {
+    background-image: linear-gradient(to right, #434343, #000000);
+    height: 22px;
+    width: 22px;
+}
+.terminalMainClass {
+    background: #011628;
+}
+.terminalText {
+    text-shadow: 0 0 5px #C8C8C8;
+    font: 1.3rem Inconsolata, monospace;
+}

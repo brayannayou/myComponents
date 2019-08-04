@@ -1,0 +1,48 @@
+{
+  "config": {
+    "title": "Gatsby Starter Default",
+    "description": "A simple starter to get up and developing quickly with Gatsby",
+    "menu": [],
+    "version": "0.1.0",
+    "repository": "https://github.com/gatsbyjs/gatsby-starter-default",
+    "native": false,
+    "themeConfig": {},
+    "separator": "-",
+    "codeSandbox": false,
+    "files": "**/*.mdx",
+    "typescript": true
+  },
+  "entries": [
+    {
+      "key": "src/components/Button/button.mdx",
+      "value": {
+        "name": "Button",
+        "route": "/components/button",
+        "id": "c3a4162ba271ddbeabea462f799cd4e0",
+        "filepath": "src/components/Button/button.mdx",
+        "fullpath": "/Users/ene/Documents/code/myComponents/src/components/Button/button.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/src/components/Button/button.mdx",
+        "slug": "src-components-button-button",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "button",
+            "depth": 1,
+            "value": "Button"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic Usage"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
+          }
+        ]
+      }
+    }
+  ],
+  "props": []
+}
