@@ -1,1 +1,1 @@
-import './tachyons/css/tachyons.css';
+import './css/tachyons.css';
