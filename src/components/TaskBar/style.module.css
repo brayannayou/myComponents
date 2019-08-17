@@ -1,7 +1,4 @@
-.mainClass {
-    height: 50px;
-}
-.TaskClass {
-    height: 44px;
-    width: 44px;
+.taskBarClass {
+    height: 35px;
+    min-width: 300px;
 }

@@ -1,11 +1,11 @@
 import React from "react"
 
+import { Terminal } from '../components/Terminal/';
 import Layout from "../components/layout";
-import { Window } from '../components/Window/';
 
 const IndexPage = () => (
   <Layout>
-    <Window />
+    <Terminal />
   </Layout>
 )
 

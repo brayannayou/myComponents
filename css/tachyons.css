@@ -8835,3 +8835,7 @@ code,
     vertical-align: bottom;
   }
 }
+.terminal-effect {
+  text-shadow: 0 0 5px #C8C8C8;
+  font-family: Inconsolata, monospace;
+}
