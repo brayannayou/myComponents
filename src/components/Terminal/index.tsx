@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-
-import cx from 'classnames';
+import { Window } from '../Window';
 import { map } from 'lodash';
+import cx from 'classnames';
 
 import styles from './style.module.css';
+
 interface States {
     dir: string;
     value: string;
@@ -77,22 +78,24 @@ export class Terminal extends Component {
     }
     render() {
         const { dir, value } = this.state;
-        const terminalMainClass = cx('pa8 h-100 white overflow-auto', styles.terminalText, styles.terminalMainClass);
-        const inputTerminalClass = cx('w-100 white bn bg-transparent ml12 outline-0', styles.terminalText);
+        const terminalMainClass = cx('f11 pv4 ph8 h-100 white overflow-auto terminal-effect', styles.terminalMainClass);
         return (
-            <div className={terminalMainClass} id="terminal" >
-                <div>{this.mapPreviousCommands()}</div>
-                <div className="flex">
-                    <span>{dir}</span>
-                    <input
-                        value={value}
-                        type="text"
-                        className={inputTerminalClass}
-                        onChange={this.inputOnChange}
-                        onKeyDown={this.inputKeyDown}
-                    />
+            <Window>
+                <div className={terminalMainClass} id="terminal" >
+                    <div>{this.mapPreviousCommands()}</div>
+                    <div className="flex">
+                        <span>{dir}</span>
+                        <input
+                            type="text"
+                            value={value}
+                            onChange={this.inputOnChange}
+                            onKeyDown={this.inputKeyDown}
+                            className="w-100 white bn bg-transparent ml12 outline-0 terminal-effect"
+                            onMouseDown={e => e.stopPropagation()}
+                        />
+                    </div>
                 </div>
-            </div>
+            </Window>
         );
     }
 };

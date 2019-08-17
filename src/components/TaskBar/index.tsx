@@ -1,24 +1,23 @@
 import React from 'react';
 
+import { storeWindows } from '../../store';
 import { Icon } from '../Icons';
 
 import cx from 'classnames';
 
 import styles from './style.module.css';
 
-interface Props {
-    onClick?: () => void;
-}
-export const TaskBar = ({ onClick }: Props) => {
-    const mainClass = cx('w-100  flex justify-center fixed bottom-0', styles.mainClass);
-    const taskBarClass = cx('br3 br--top pa4 bg-gray');
-    const taskClass = cx('flex justify-center items-center', styles.TaskClass);
+export const TaskBar = () => {
+    const taskBarClass = cx('flex br2 br--top pa4 bg-moon-gray', styles.taskBarClass);
+    const onClick = () => {
+        storeWindows.dispatch({type: 'open'});
+    }
     return (
-        <div className={mainClass}>
+        <div className="w-100  flex justify-center fixed bottom-0">
             <div className={taskBarClass}>
-                <div className={taskClass} onClick={onClick}>
+                <button onClick={onClick} className="pointer bg-transparent bn">
                     <Icon name="SvgIconInstagram" />
-                </div>
+                </button>
             </div>
         </div>
     );
